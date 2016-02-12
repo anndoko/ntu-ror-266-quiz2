@@ -63,7 +63,7 @@
 7. attr_accessor 的功能是什麼，它和 attr_reader、attr_writer 之間的差別是什麼？
   #### ANS: 
   ```
-  Ruby 不允許物件外部使用實體變數，如要使用，需定義發法。
+  Ruby 不允許物件外部使用實體變數，如要使用，需定義方法。
   attr_accessor: 讀取及寫入。
   attr_reader: 唯獨。
   attr_writer: 唯寫。
@@ -89,9 +89,9 @@
   Parent class 不能使用；sub class 因為繼承了該 class，所以可以使用。
   ```
 
-11. 請間單說明什麼是 Relational Database，什麼是 SQL
+11. 請簡單說明什麼是 Relational Database，什麼是 SQL
   #### ANS:
   ```
-  Relational Database: 關聯式資料庫。
+  Relational Database: 關聯式資料庫。有關聯的數個資料表，資料表之間由主鍵(Primal Key)和連外鍵(Foreign Key)來建立關聯。
   SQL: Structured Query Language(SQL)，用來操作資料庫的程式語言。
   ```
