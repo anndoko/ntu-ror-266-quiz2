@@ -20,13 +20,13 @@
 2. 什麼是 module? 請寫一段程式碼說明一個 class 要如何使用一個 module 裡面的 method?
   #### ANS:
   ```
-  Module: 存放 method；class 要 include module 後，才能使用 module 內的 method。
+  Module: 存放會可能會重複使用的 method；class 要使用關鍵字 include 後，才能使用 module 內的 method。
   ```
 
 3. 請說明 class variable 和 instance variable 之間的差別
   #### ANS:
   ```
-  Class variable: 類別變數，可在類別方法和實例方法使用。
+  Class variable: 類別變數，class 本身的資料。
   Instance variable: 實例變數，實例建立後使用。
   ```
 
@@ -63,7 +63,7 @@
 7. attr_accessor 的功能是什麼，它和 attr_reader、attr_writer 之間的差別是什麼？
   #### ANS: 
   ```
-  # Ruby 不允許物件外部使用實體變數，如要使用，需定義發法。
+  Ruby 不允許物件外部使用實體變數，如要使用，需定義發法。
   attr_accessor: 讀取及寫入。
   attr_reader: 唯獨。
   attr_writer: 唯寫。
@@ -80,13 +80,13 @@
   #### ANS:
   ```
   Inheritance: 繼承，繼承 parent class 的功能。
-  Module: 不能使用 .new，也不能被繼承。需要使用 include 來使用 module 的 method。
+  Module: 不能用 .new，也不能被繼承。需要使用關鍵字 include 來使用 module 的 method。
   ```
 
 10. 若今天有一個 class 有 include 一個 module，他的 parent class 和 sub class 是否可以使用該 module 裡的 method?
   #### ANS:
   ```
-  Parent class 不能使用；sub class 因為繼承了 class，所以可以用該 module 的 method。
+  Parent class 不能使用；sub class 因為繼承了該 class，所以可以使用。
   ```
 
 11. 請間單說明什麼是 Relational Database，什麼是 SQL
